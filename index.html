@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+
+        <h2>STOPWATCH</h2> <!-- ✅ Added heading -->
+        <div class="stopwatch">
+            <div id="display">00:00:00</div>
+
+            <div class="button-group">
+                <button class="start" onclick="start()" aria-label="Start the stopwatch">Start</button>
+                <button class="stop" onclick="stop()" aria-label="Stop the stopwatch">Stop</button>
+                <button class="lap" onclick="lap()" aria-label="Lap the stopwatch">Lap</button>
+                <button class="reset" onclick="reset()" aria-label="Reset the stopwatch">Reset</button>
+            </div>
+
+            <div id="message" class="status-message"></div>
+        </div>
+        <div id="laps"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
